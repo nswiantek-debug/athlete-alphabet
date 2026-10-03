@@ -19,22 +19,20 @@ select{width:100%;padding:13px;border-radius:14px;border:1px solid var(--line);b
 body.theme-cubs{--bg:#071a3a;--panel:#0e2a55;--panel2:#153765;--line:#55739c;--accent:#cc3433;--accentInk:#fff;--soft:#183c6d}body.theme-chicago{--bg:#071d2d;--panel:#0d3048;--panel2:#14425f;--line:#65a9d1;--accent:#b3d9ef;--accentInk:#082033;--soft:#174762}
 .theme-mlb{--bg:#07152b;--card:#102746;--line:#5477a8;--accent:#d71920;--accent2:#ffffff;--text:#fff;--muted:#b8c5d9}.theme-team{--text:#f7f9fc;--muted:#aeb9c7}
 
-/* V3.1.2: make each franchise's secondary/accent color unmistakable */
-body.theme-team .card{box-shadow:inset 0 1px 0 color-mix(in srgb,var(--accent) 24%,transparent)}
-body.theme-team .eyebrow{color:color-mix(in srgb,var(--accent) 58%,var(--ink))}
-body.theme-team .scope .active,body.theme-team .modes .active,body.theme-team .eras .active,body.theme-team .choiceRow button.active,body.theme-team .primary{background:var(--accent);color:var(--accentInk);border-color:color-mix(in srgb,var(--accent) 82%,white)}
-body.theme-team .progress{background:color-mix(in srgb,var(--panel2) 76%,black)}
-body.theme-team .bar{background:var(--accent)}
-body.theme-team .hero{border-color:color-mix(in srgb,var(--accent) 60%,var(--line))}
-body.theme-team input:focus,body.theme-team select:focus{outline:2px solid var(--accent);outline-offset:2px}
-body.theme-team .iconBtn{border-color:color-mix(in srgb,var(--accent) 48%,var(--line))}
 
-/* V3.1.3 — audited 30-team palette hierarchy */
-:root{--secondary:#ffffff}
-body.theme-team header{border-bottom:2px solid color-mix(in srgb,var(--secondary) 72%,transparent);padding-bottom:14px}
-body.theme-team h1{color:color-mix(in srgb,var(--secondary) 72%,white)}
-body.theme-team .card{border-color:color-mix(in srgb,var(--accent) 42%,var(--line));box-shadow:inset 4px 0 0 color-mix(in srgb,var(--secondary) 38%,transparent)}
-body.theme-team .hero{box-shadow:inset 4px 0 0 var(--accent),inset -4px 0 0 color-mix(in srgb,var(--secondary) 62%,transparent)}
-body.theme-team .initials{color:#fff;text-shadow:0 2px 18px color-mix(in srgb,var(--accent) 38%,transparent)}
-body.theme-team .scope .active,body.theme-team .modes .active,body.theme-team .eras .active,body.theme-team .choiceRow button.active,body.theme-team .primary{box-shadow:0 0 0 2px color-mix(in srgb,var(--secondary) 40%,transparent)}
-body.theme-team .eyebrow{color:color-mix(in srgb,var(--accent) 72%,white)}
+/* V3.1.4 — explicit solid-color team roles. No generated/blended team colors. */
+body.theme-team{background:var(--bg)}
+body.theme-team header{border-bottom:2px solid var(--secondary);padding-bottom:14px}
+body.theme-team h1{color:var(--ink)}
+body.theme-team .card{background:var(--panel);border:2px solid var(--secondary);box-shadow:none}
+body.theme-team .hero{border-left:7px solid var(--accent);border-right:2px solid var(--secondary)}
+body.theme-team .eyebrow{color:var(--secondary)}
+body.theme-team .initials{color:#fff;text-shadow:none}
+body.theme-team .scope button,body.theme-team .modes button,body.theme-team .eras button,body.theme-team .choiceRow button,body.theme-team .ghost,body.theme-team .reset{background:var(--panel2);border-color:var(--secondary);color:var(--ink)}
+body.theme-team .scope .active,body.theme-team .modes .active,body.theme-team .eras .active,body.theme-team .choiceRow button.active,body.theme-team .primary{background:var(--accent);border:2px solid var(--secondary);color:var(--accentInk);box-shadow:none}
+body.theme-team .progress{background:#20252b}
+body.theme-team .bar{background:var(--accent)}
+body.theme-team input,body.theme-team select{border-color:var(--secondary)}
+body.theme-team input:focus,body.theme-team select:focus{outline:3px solid var(--accent);outline-offset:2px}
+body.theme-team .iconBtn{border-color:var(--secondary)}
+body.theme-team .hint{background:var(--soft);border:1px solid var(--secondary)}
