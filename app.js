@@ -1,17 +1,46 @@
 const PLAYERS=window.ATHLETE_PLAYERS||[], MLB=window.MLB_TEAMS||{};const CURRENT=2026,RECENT=6,L='ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),ALL=L.flatMap(a=>L.map(b=>a+b)),DOUB=L.map(x=>x+x);
 
 const TEAM_THEMES={
-ANA:['#0b1f3a','#132b4c','#1d3b61','#ba0021','#ffffff','#27496d'],ARI:['#1b1115','#2b171d','#3b2028','#a71930','#ffffff','#4a2831'],ATL:['#081b33','#102b4c','#173b62','#ce1141','#ffffff','#204b73'],BAL:['#17120e','#241b14','#33251a','#df4601','#ffffff','#3e2c1f'],BOS:['#071a32','#102b4d','#183b63','#bd3039','#ffffff','#224b73'],CHC:['#071a3a','#0e2a55','#153765','#cc3433','#ffffff','#183c6d'],CHW:['#080b0e','#15191e','#20262d','#f4f4f4','#080b0e','#282f36'],CIN:['#230b0e','#351216','#48191f','#c6011f','#ffffff','#552028'],CLE:['#071b2e','#102b45','#173b59','#e31937','#ffffff','#20486a'],COL:['#120d20','#211735','#302248','#c4ced4','#151018','#3c2c57'],DET:['#07182b','#10263e','#18344f','#fa4616','#ffffff','#20415f'],FLA:['#061d2b','#0d2d40','#153d54','#00a3e0','#ffffff','#174b64'],HOU:['#071b31','#102b4b','#183b60','#eb6e1f','#ffffff','#204a70'],KCR:['#071c36','#102e55','#173d6b','#7ab2dd','#08182b','#204b79'],LAD:['#061d3b','#0c2e59','#123d72','#ffffff','#005a9c','#174a83'],MIL:['#07192f','#102943','#183852','#ffc52f','#101820','#204561'],MIN:['#07182d','#102740','#183650','#d31145','#ffffff','#20445f'],NYM:['#071d3a','#102f58','#173f70','#ff5910','#ffffff','#204c7d'],NYY:['#071527','#0e2239','#16304a','#ffffff','#0c2340','#1d3c59'],OAK:['#071f18','#0d3326','#154533','#efb21e','#10261d','#1b5640'],PHI:['#071b35','#102c50','#183b65','#e81828','#ffffff','#204a75'],PIT:['#17140a','#27210f','#382e14','#fdb827','#16130a','#473a19'],SDP:['#1d160b','#302311','#433118','#ffc425','#20180c','#513c1e'],SEA:['#061c22','#0d2e35','#154049','#c4ced4','#062b33','#1c515b'],SFG:['#21110b','#341a10','#472316','#fd5a1e','#ffffff','#552a1a'],STL:['#071a33','#102a4c','#173961','#c41e3a','#ffffff','#204872'],TBD:['#071b35','#102c50','#183b65','#8fbce6','#092544','#204a75'],TEX:['#071b3a','#102d59','#173e73','#c0111f','#ffffff','#204b82'],TOR:['#071d3d','#102f5d','#174078','#134a8e','#ffffff','#205089'],WSN:['#230b10','#351218','#481921','#ab0003','#ffffff','#552029']};
+ANA:['#26070c','#3a0b12','#51101a','#ba0021','#ffffff','#162b4a','#0b1f3a'],
+ARI:['#1b1115','#2b171d','#3b2028','#a71930','#ffffff','#4a2831','#e3d4ad'],
+ATL:['#081b33','#102b4c','#173b62','#ce1141','#ffffff','#204b73','#ffffff'],
+BAL:['#17120e','#241b14','#33251a','#df4601','#ffffff','#3e2c1f','#000000'],
+BOS:['#071a32','#102b4d','#183b63','#bd3039','#ffffff','#224b73','#ffffff'],
+CHC:['#071a3a','#10264a','#3b1a28','#cc3433','#ffffff','#183c6d','#0e3386'],
+CHW:['#080b0e','#15191e','#20262d','#f4f4f4','#080b0e','#282f36','#c4ced4'],
+CIN:['#230b0e','#351216','#48191f','#c6011f','#ffffff','#552028','#000000'],
+CLE:['#071b2e','#102b45','#173b59','#e31937','#ffffff','#20486a','#0c2340'],
+COL:['#120d20','#211735','#302248','#c4ced4','#151018','#3c2c57','#33006f'],
+DET:['#07182b','#10263e','#18344f','#fa4616','#ffffff','#20415f','#0c2340'],
+FLA:['#061d2b','#0d2d40','#153d54','#00a3e0','#ffffff','#174b64','#ef3340'],
+HOU:['#071b31','#102b4b','#183b60','#eb6e1f','#ffffff','#204a70','#002d62'],
+KCR:['#071c36','#102e55','#173d6b','#7ab2dd','#08182b','#204b79','#ffffff'],
+LAD:['#061d3b','#0c2e59','#123d72','#ffffff','#005a9c','#174a83','#005a9c'],
+MIL:['#07192f','#102943','#183852','#ffc52f','#101820','#204561','#12284b'],
+MIN:['#07182d','#102740','#183650','#d31145','#ffffff','#20445f','#002b5c'],
+NYM:['#071d3a','#102f58','#173f70','#ff5910','#ffffff','#204c7d','#002d72'],
+NYY:['#071527','#0e2239','#16304a','#ffffff','#0c2340','#1d3c59','#c4ced4'],
+OAK:['#071f18','#0d3326','#154533','#efb21e','#10261d','#1b5640','#003831'],
+PHI:['#26070c','#3b0b12','#53101a','#e81828','#ffffff','#5d1b25','#003087'],
+PIT:['#17140a','#27210f','#382e14','#fdb827','#16130a','#473a19','#000000'],
+SDP:['#1d160b','#302311','#433118','#ffc425','#20180c','#513c1e','#2f241d'],
+SEA:['#061c22','#0d2e35','#154049','#c4ced4','#062b33','#1c515b','#005c5c'],
+SFG:['#21110b','#341a10','#472316','#fd5a1e','#ffffff','#552a1a','#000000'],
+STL:['#26070c','#3b0b12','#53101a','#c41e3a','#ffffff','#5d1b25','#0c2340'],
+TBD:['#071b35','#102c50','#183b65','#8fbce6','#092544','#204a75','#f5d130'],
+TEX:['#071b3a','#102d59','#173e73','#c0111f','#ffffff','#204b82','#003278'],
+TOR:['#071d3d','#102f5d','#174078','#134a8e','#ffffff','#205089','#e8291c'],
+WSN:['#230b10','#351218','#481921','#ab0003','#ffffff','#552029','#14225a']};
 function applyTheme(){
  const root=document.documentElement,m=meta();
  document.body.className='theme-'+m.theme;
  if(cfg.scope==='team'){
    const t=TEAM_THEMES[cfg.choice]||TEAM_THEMES.CHW;
-   ['--bg','--panel','--panel2','--accent','--accentInk','--soft'].forEach((v,i)=>{root.style.setProperty(v,t[i]);document.body.style.setProperty(v,t[i])});
+   ['--bg','--panel','--panel2','--accent','--accentInk','--soft','--secondary'].forEach((v,i)=>{root.style.setProperty(v,t[i]);document.body.style.setProperty(v,t[i])});
    root.style.setProperty('--line',t[2]);
    document.body.style.setProperty('--line',t[2]);
  }else{
-   ['--bg','--panel','--panel2','--accent','--accentInk','--soft','--line'].forEach(v=>{root.style.removeProperty(v);document.body.style.removeProperty(v)});
+   ['--bg','--panel','--panel2','--accent','--accentInk','--soft','--secondary','--line'].forEach(v=>{root.style.removeProperty(v);document.body.style.removeProperty(v)});
  }
 }
 
