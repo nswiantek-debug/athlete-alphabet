@@ -20,19 +20,20 @@ body.theme-cubs{--bg:#071a3a;--panel:#0e2a55;--panel2:#153765;--line:#55739c;--a
 .theme-mlb{--bg:#07152b;--card:#102746;--line:#5477a8;--accent:#d71920;--accent2:#ffffff;--text:#fff;--muted:#b8c5d9}.theme-team{--text:#f7f9fc;--muted:#aeb9c7}
 
 
-/* V3.1.4 — explicit solid-color team roles. No generated/blended team colors. */
+/* V3.1.5 — dark Athlete Alphabet foundation with authentic team accents. */
 body.theme-team{background:var(--bg)}
-body.theme-team header{border-bottom:2px solid var(--secondary);padding-bottom:14px}
+body.theme-team header{border-bottom:1px solid color-mix(in srgb,var(--secondary) 55%,transparent);padding-bottom:14px}
 body.theme-team h1{color:var(--ink)}
-body.theme-team .card{background:var(--panel);border:2px solid var(--secondary);box-shadow:none}
-body.theme-team .hero{border-left:7px solid var(--accent);border-right:2px solid var(--secondary)}
+body.theme-team .card{background:var(--panel);border:1px solid color-mix(in srgb,var(--secondary) 72%,#555d66);box-shadow:none}
+body.theme-team .hero{border-left:6px solid var(--accent)}
 body.theme-team .eyebrow{color:var(--secondary)}
 body.theme-team .initials{color:#fff;text-shadow:none}
-body.theme-team .scope button,body.theme-team .modes button,body.theme-team .eras button,body.theme-team .choiceRow button,body.theme-team .ghost,body.theme-team .reset{background:var(--panel2);border-color:var(--secondary);color:var(--ink)}
-body.theme-team .scope .active,body.theme-team .modes .active,body.theme-team .eras .active,body.theme-team .choiceRow button.active,body.theme-team .primary{background:var(--accent);border:2px solid var(--secondary);color:var(--accentInk);box-shadow:none}
-body.theme-team .progress{background:#20252b}
+body.theme-team .scope button,body.theme-team .modes button,body.theme-team .eras button,body.theme-team .choiceRow button,body.theme-team .ghost,body.theme-team .reset{background:var(--panel2);border-color:color-mix(in srgb,var(--secondary) 62%,#555d66);color:var(--ink)}
+body.theme-team .scope .active,body.theme-team .modes .active,body.theme-team .eras .active,body.theme-team .choiceRow button.active,body.theme-team .primary{background:var(--accent);border:2px solid color-mix(in srgb,var(--secondary) 78%,white 22%);color:var(--accentInk);box-shadow:none}
+body.theme-team .progress{background:#252b32}
 body.theme-team .bar{background:var(--accent)}
-body.theme-team input,body.theme-team select{border-color:var(--secondary)}
-body.theme-team input:focus,body.theme-team select:focus{outline:3px solid var(--accent);outline-offset:2px}
-body.theme-team .iconBtn{border-color:var(--secondary)}
-body.theme-team .hint{background:var(--soft);border:1px solid var(--secondary)}
+body.theme-team input,body.theme-team select{background:#0d1116;border-color:color-mix(in srgb,var(--secondary) 60%,#555d66)}
+body.theme-team input:focus,body.theme-team select:focus{outline:2px solid var(--accent);outline-offset:2px}
+body.theme-team .iconBtn{background:var(--panel2);border-color:color-mix(in srgb,var(--secondary) 62%,#555d66)}
+body.theme-team .hint{background:var(--soft);border:1px solid color-mix(in srgb,var(--secondary) 55%,#555d66)}
+body.theme-team .stat{border-top:3px solid var(--accent)}
