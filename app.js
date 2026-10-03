@@ -7,10 +7,11 @@ function applyTheme(){
  document.body.className='theme-'+m.theme;
  if(cfg.scope==='team'){
    const t=TEAM_THEMES[cfg.choice]||TEAM_THEMES.CHW;
-   ['--bg','--panel','--panel2','--accent','--accentInk','--soft'].forEach((v,i)=>root.style.setProperty(v,t[i]));
+   ['--bg','--panel','--panel2','--accent','--accentInk','--soft'].forEach((v,i)=>{root.style.setProperty(v,t[i]);document.body.style.setProperty(v,t[i])});
    root.style.setProperty('--line',t[2]);
+   document.body.style.setProperty('--line',t[2]);
  }else{
-   ['--bg','--panel','--panel2','--accent','--accentInk','--soft','--line'].forEach(v=>root.style.removeProperty(v));
+   ['--bg','--panel','--panel2','--accent','--accentInk','--soft','--line'].forEach(v=>{root.style.removeProperty(v);document.body.style.removeProperty(v)});
  }
 }
 

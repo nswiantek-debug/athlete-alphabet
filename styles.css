@@ -17,4 +17,14 @@ select{width:100%;padding:13px;border-radius:14px;border:1px solid var(--line);b
 .hintTitle{font-weight:850;margin-bottom:8px}.hintLine{margin:5px 0}.hintWarning{margin-top:10px;padding:11px;border:1px solid var(--line);border-radius:12px;background:#10151a}.hintStrong{width:100%;margin-top:10px}.revealNote{font-size:12px;color:var(--muted);margin-top:6px}.revealed{font-weight:850;font-size:20px}
 .choiceRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.choiceRow button{border:1px solid var(--line);border-radius:14px;padding:10px 14px;background:var(--panel2);color:var(--ink)}.choiceRow button.active{background:var(--accent);color:var(--accentInk);font-weight:800}
 body.theme-cubs{--bg:#071a3a;--panel:#0e2a55;--panel2:#153765;--line:#55739c;--accent:#cc3433;--accentInk:#fff;--soft:#183c6d}body.theme-chicago{--bg:#071d2d;--panel:#0d3048;--panel2:#14425f;--line:#65a9d1;--accent:#b3d9ef;--accentInk:#082033;--soft:#174762}
-.theme-mlb{--bg:#07152b;--card:#102746;--line:#5477a8;--accent:#d71920;--accent2:#ffffff;--text:#fff;--muted:#b8c5d9}.theme-team{--bg:#0b1118;--card:#151e29;--line:#53677e;--accent:#e7edf5;--accent2:#fff;--text:#f7f9fc;--muted:#aeb9c7}
+.theme-mlb{--bg:#07152b;--card:#102746;--line:#5477a8;--accent:#d71920;--accent2:#ffffff;--text:#fff;--muted:#b8c5d9}.theme-team{--text:#f7f9fc;--muted:#aeb9c7}
+
+/* V3.1.2: make each franchise's secondary/accent color unmistakable */
+body.theme-team .card{box-shadow:inset 0 1px 0 color-mix(in srgb,var(--accent) 24%,transparent)}
+body.theme-team .eyebrow{color:color-mix(in srgb,var(--accent) 58%,var(--ink))}
+body.theme-team .scope .active,body.theme-team .modes .active,body.theme-team .eras .active,body.theme-team .choiceRow button.active,body.theme-team .primary{background:var(--accent);color:var(--accentInk);border-color:color-mix(in srgb,var(--accent) 82%,white)}
+body.theme-team .progress{background:color-mix(in srgb,var(--panel2) 76%,black)}
+body.theme-team .bar{background:var(--accent)}
+body.theme-team .hero{border-color:color-mix(in srgb,var(--accent) 60%,var(--line))}
+body.theme-team input:focus,body.theme-team select:focus{outline:2px solid var(--accent);outline-offset:2px}
+body.theme-team .iconBtn{border-color:color-mix(in srgb,var(--accent) 48%,var(--line))}
