@@ -37,3 +37,4 @@ body.theme-team input:focus,body.theme-team select:focus{outline:2px solid var(-
 body.theme-team .iconBtn{background:var(--panel2);border-color:color-mix(in srgb,var(--secondary) 62%,#555d66)}
 body.theme-team .hint{background:var(--soft);border:1px solid color-mix(in srgb,var(--secondary) 55%,#555d66)}
 body.theme-team .stat{border-top:3px solid var(--accent)}
+.namedBox{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}.namedToggle{width:100%;text-align:left}.namedList{margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--soft);border:1px solid var(--line)}.namedList div{padding:7px 0;border-bottom:1px solid var(--line)}.namedList div:last-child{border-bottom:0}
