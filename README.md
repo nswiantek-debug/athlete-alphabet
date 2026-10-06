@@ -1,4 +1,4 @@
-# Athlete Alphabet V4.0.1 — MLB + NFL
+# Athlete Alphabet V4.0.2 — MLB + NFL
 
 ## What's new
 - NFL added as the second sport.
@@ -29,3 +29,7 @@ Replace/upload all 7 files in the ZIP:
 - README.md
 
 Do not clear browser website data; Players Named progress is stored locally.
+
+
+## V4.0.2 NFL loader
+The NFL loader now uses the static season CSV mirror at MyFootballToolbox rather than GitHub release-asset URLs, which were failing in iOS Safari. The compiled NFL player database is cached in IndexedDB after the first successful load. Source season files are based on nflverse roster data.
