@@ -1,35 +1,7 @@
-# Athlete Alphabet V4.0.2 — MLB + NFL
+# Athlete Alphabet V4.0.3
 
-## What's new
-- NFL added as the second sport.
-- NFL Team, Region, and League scopes.
-- NFL historical season-roster data from 1920–2026 via nflverse.
-- NFL franchise lineage support for relocations (Raiders, Rams, Chargers, Colts, Cardinals, Titans/Oilers, etc.).
-- Region eligibility follows where a team played at the time.
-- Existing MLB V3.4 data and universal Players Named progress are preserved.
-- Overall player completion now shows one decimal place when progress is under 1%.
+This build replaces the failing NFL runtime downloader with an embedded JavaScript NFL verification dataset. It is intentionally a verification build: it proves the no-network architecture and includes Walter Payton plus representative historical/current players across all 32 current NFL franchises.
 
-## Important first NFL load
-The first time NFL is selected, the app downloads the nflverse season roster files and builds a compact player index in the browser. A progress message shows seasons loaded. The derived NFL index is then cached in IndexedDB on that device, so later NFL launches are much faster.
+Important: this is not yet the complete 1920–2026 NFL player database. Do not use its possible-answer counts as final NFL counts. The next data step is to compile the full nflverse season-level roster history into the same embedded format.
 
-NFL source pattern:
-https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_YEAR.csv
-
-## MLB data
-MLB remains the V3.4 database with the July 31, 2026 active-roster snapshot overlay.
-
-## Upload
-Replace/upload all 7 files in the ZIP:
-- index.html
-- app.js
-- styles.css
-- players.js
-- roster-snapshot.js
-- nfl-data.js
-- README.md
-
-Do not clear browser website data; Players Named progress is stored locally.
-
-
-## V4.0.2 NFL loader
-The NFL loader now uses the static season CSV mirror at MyFootballToolbox rather than GitHub release-asset URLs, which were failing in iOS Safari. The compiled NFL player database is cached in IndexedDB after the first successful load. Source season files are based on nflverse roster data.
+MLB data and existing universal progress keys are unchanged. NFL team color themes remain enabled.
