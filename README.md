@@ -1,4 +1,4 @@
-# Athlete Alphabet V4.0 — MLB + NFL
+# Athlete Alphabet V4.0.1 — MLB + NFL
 
 ## What's new
 - NFL added as the second sport.
