@@ -1,4 +1,4 @@
-// Athlete Alphabet NFL embedded verification database — V4.0.3.
+// Athlete Alphabet NFL embedded verification database — V4.0.4.
 // No runtime network requests. This build proves the static-data architecture before the full NFL dataset is bundled.
 (function(){
 const raw=[
@@ -7,5 +7,5 @@ const raw=[
 ];
 function initials(name){let x=name.replace(/\s+(Jr\.?|Sr\.?|II|III|IV|V)$/i,'').trim().split(/\s+/);return x.length>1?(x[0][0]+x[x.length-1][0]).toUpperCase():''}
 const map=new Map();for(const [slug,n,p,t,a,b] of raw){let id='nfl:'+slug,rec=map.get(id);if(!rec){rec={id,n,i:initials(n),p,teams:{},career:[],sport:'NFL'};map.set(id,rec)}rec.teams[t]=[a,b];if(!rec.career.includes(t))rec.career.push(t)}
-window.NFL_PLAYERS=[...map.values()];window.NFL_DATA_MODE='embedded-verification';window.loadNFLPlayers=async()=>window.NFL_PLAYERS;
+window.NFL_PLAYERS=[...map.values()];window.NFL_DATA_MODE='embedded-verification';window.loadNFLPlayers=async()=>window.NFL_PLAYERS;window.NFL_SELF_TEST=()=>{const wp=window.NFL_PLAYERS.find(p=>p.n==='Walter Payton');return !!(wp&&wp.i==='WP'&&wp.teams.CHI&&wp.teams.CHI[0]===1975&&wp.teams.CHI[1]===1987)};
 })();
