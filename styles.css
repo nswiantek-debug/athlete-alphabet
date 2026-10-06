@@ -38,3 +38,6 @@ body.theme-team .iconBtn{background:var(--panel2);border-color:color-mix(in srgb
 body.theme-team .hint{background:var(--soft);border:1px solid color-mix(in srgb,var(--secondary) 55%,#555d66)}
 body.theme-team .stat{border-top:3px solid var(--accent)}
 .namedBox{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}.namedToggle{width:100%;text-align:left}.namedList{margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--soft);border:1px solid var(--line)}.namedList div{padding:7px 0;border-bottom:1px solid var(--line)}.namedList div:last-child{border-bottom:0}
+
+/* V3.3.2 name disambiguation */
+.ambiguityTitle{font-weight:800;margin-bottom:10px}.ambiguityChoices{display:grid;gap:8px;margin-top:8px}.ambiguityChoice{width:100%;text-align:left;line-height:1.35;padding:11px 12px}
