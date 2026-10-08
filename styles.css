@@ -41,3 +41,7 @@ body.theme-team .stat{border-top:3px solid var(--accent)}
 
 /* V3.3.2 name disambiguation */
 .ambiguityTitle{font-weight:800;margin-bottom:10px}.ambiguityChoices{display:grid;gap:8px;margin-top:8px}.ambiguityChoice{width:100%;text-align:left;line-height:1.35;padding:11px 12px}
+
+/* V4.0.5 — compact scope selectors */
+.choiceRow{display:block;margin-top:12px}.choiceLabel{display:block;font-weight:800;margin:0 0 7px;color:var(--muted);font-size:14px}.scopeSelect{width:100%;padding:14px 44px 14px 14px;border-radius:14px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font-size:18px}.leagueChoice{padding:13px 14px;border:1px solid var(--line);border-radius:14px;background:var(--panel2);color:var(--ink)}
+body.theme-team .scopeSelect,body.theme-team .leagueChoice{background:var(--panel2);border-color:color-mix(in srgb,var(--secondary) 62%,#555d66);color:var(--ink)}

@@ -12,3 +12,9 @@ MLB data and existing universal progress keys are unchanged. NFL team color them
 - Added embedded-data self-test for Walter Payton (WP, CHI, 1975–1987).
 - Jump To zero-result message now includes the active era.
 - NFL remains fully embedded with no runtime roster downloads.
+
+
+V4.0.5 cosmetic pass:
+- Team and Region choices use compact dropdown selectors instead of full button grids.
+- Jump To Initials is unrestricted AA-ZZ navigation and no longer blocks or reveals an athlete because of the active era.
+- Existing MLB/NFL progress storage remains unchanged.
