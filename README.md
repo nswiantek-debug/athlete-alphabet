@@ -1,20 +1,11 @@
-# Athlete Alphabet V4.0.4
+Athlete Alphabet V4.0.6
 
-This build replaces the failing NFL runtime downloader with an embedded JavaScript NFL verification dataset. It is intentionally a verification build: it proves the no-network architecture and includes Walter Payton plus representative historical/current players across all 32 current NFL franchises.
+Changes from V4.0.5:
+- Fixed low-contrast team/region captions above the initials on dark themes.
+- Preserved compact Team and Region dropdowns and unrestricted Jump To.
+- Preserved existing MLB and NFL progress keys and data files.
+- Updated cache-busting and version display.
 
-Important: this is not yet the complete 1920–2026 NFL player database. Do not use its possible-answer counts as final NFL counts. The next data step is to compile the full nflverse season-level roster history into the same embedded format.
+IMPORTANT: NFL player data is still a small embedded verification set, not the full historical NFL database. Counts are not complete.
 
-MLB data and existing universal progress keys are unchanged. NFL team color themes remain enabled.
-
-
-## V4.0.4 fix
-- NFL opens in All-Time when switching from MLB, so historical players are not silently excluded by a retained Modern/Current era filter.
-- Added embedded-data self-test for Walter Payton (WP, CHI, 1975–1987).
-- Jump To zero-result message now includes the active era.
-- NFL remains fully embedded with no runtime roster downloads.
-
-
-V4.0.5 cosmetic pass:
-- Team and Region choices use compact dropdown selectors instead of full button grids.
-- Jump To Initials is unrestricted AA-ZZ navigation and no longer blocks or reveals an athlete because of the active era.
-- Existing MLB/NFL progress storage remains unchanged.
+Upload all 7 files to the root of the existing GitHub Pages repository. Force-close the iPhone Home Screen app after deployment.
