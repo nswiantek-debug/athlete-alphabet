@@ -1,7 +1,7 @@
-Athlete Alphabet V4.3 — NHL historical expansion
+Athlete Alphabet V4.4 — All Sports Mode
 
-Includes V4.2.2 MLB, NFL, NBA, ABA and BAA, with added NHL historical player-season data (1917–18 through 2023–24) from user-provided all_player_stats_1917_to_2024.csv.
+Adds All Sports play to the four-sport V4.3 application. Choose All Sports to play a combined MLB/NFL/NBA/NHL challenge across all eras. Saved player IDs remain under the original aa-v33-named-athletes localStorage key; existing progress is retained. Verified multi-sport people are linked so that naming them in one sport counts for their other sport and All Sports. Other names are intentionally not automatically merged because people in different leagues can share identical names.
 
-IMPORTANT: NHL 2024–25 and 2025–26 seasons are NOT included. NHL Current therefore displays 2021–24 and NHL All-Time ends 2024. The CSV contains some WHA-only entries, which are excluded. Historical team code mappings and shared-name player identities are best-effort and require auditing.
+All Sports has a single league-wide scope; team and region scopes remain available for individual sports. Historical NHL data still ends in 2023–24.
 
-Install all nine files at repository root. Do not delete local browser data; existing named progress storage keys are preserved.
+Install all nine files at the GitHub repository root, replacing the prior versions.
