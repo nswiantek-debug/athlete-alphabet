@@ -1,15 +1,7 @@
-Athlete Alphabet V4.2.2
+Athlete Alphabet V4.3 — NHL historical expansion
 
-Fixes duplicate historical NBA/BAA team dropdown entries while retaining player-season eligibility. Distinct teams with identical names are disambiguated by season or league. Improves caption contrast above initials. Preserves existing progress storage.
+Includes V4.2.2 MLB, NFL, NBA, ABA and BAA, with added NHL historical player-season data (1917–18 through 2023–24) from user-provided all_player_stats_1917_to_2024.csv.
 
-Athlete Alphabet V4.2 — MLB + NFL + NBA/ABA/BAA (1947–2026)
+IMPORTANT: NHL 2024–25 and 2025–26 seasons are NOT included. NHL Current therefore displays 2021–24 and NHL All-Time ends 2024. The CSV contains some WHA-only entries, which are excluded. Historical team code mappings and shared-name player identities are best-effort and require auditing.
 
-Upload ALL 8 files to the root of the existing GitHub Pages repository. Keep file names unchanged.
-
-NBA source: Sumitro Datta, NBA Stats (1947–present), CC0, https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats. Player Season Info and Team Abbrev, snapshot April 2026.
-
-NBA player identities use basketball-reference slugs. ABA and BAA included. Historical defunct teams selectable separately. Modern team choices include historical franchise aliases, region scopes use historical city/team season codes. The 2026 season is present in source; this is not a live roster.
-
-Existing localStorage progress keys and MLB/NFL data are unchanged. No NBA progress should overwrite earlier sports.
-
-V4.2.2 fixes dark-on-dark section headings throughout the app and clarifies the 1949–50 Denver Nuggets team label. All existing data and local progress keys are unchanged.
+Install all nine files at repository root. Do not delete local browser data; existing named progress storage keys are preserved.
