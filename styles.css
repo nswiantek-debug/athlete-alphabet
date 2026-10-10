@@ -52,3 +52,9 @@ body.theme-mlb .hero .eyebrow, body.theme-nfl .hero .eyebrow {
   color:#e9eef5 !important; opacity:1; text-shadow:0 1px 2px rgba(0,0,0,.35);
 }
 body.theme-team .hero .eyebrow {letter-spacing:.18em}
+
+/* V4.2.1 — clear contrast for the caption immediately above the initials. */
+body .hero .eyebrow,body.theme-team .hero .eyebrow,body.theme-region .hero .eyebrow,
+body.theme-mlb .hero .eyebrow,body.theme-nfl .hero .eyebrow {
+ color:#ffffff !important;opacity:1 !important;text-shadow:0 1px 3px #000,0 0 7px rgba(0,0,0,.8);
+}

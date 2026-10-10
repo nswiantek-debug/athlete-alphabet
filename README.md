@@ -1,3 +1,7 @@
+Athlete Alphabet V4.2.1
+
+Fixes duplicate historical NBA/BAA team dropdown entries while retaining player-season eligibility. Distinct teams with identical names are disambiguated by season or league. Improves caption contrast above initials. Preserves existing progress storage.
+
 Athlete Alphabet V4.2 — MLB + NFL + NBA/ABA/BAA (1947–2026)
 
 Upload ALL 8 files to the root of the existing GitHub Pages repository. Keep file names unchanged.
