@@ -1,2 +1,1 @@
-Athlete Alphabet V4.4.8 — Teams A–Z Random Letter, reset, and full nickname sorting.
-Upload all 10 files to GitHub repository root. Progress persists under existing localStorage keys; reset Teams only if explicitly confirmed.
+Athlete Alphabet V4.5.0 — six gameplay improvements. Upload all 11 game files (README optional). Saved localStorage keys are unchanged. Backup first; test restore only with a safe backup. Issue reports are saved/copied, not automatically submitted. Local checks do not replace full manual gameplay testing.
