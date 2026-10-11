@@ -1,3 +1,7 @@
+Athlete Alphabet V4.4.2 — NHL Current Era + San Jose Sharks Theme Fix
+
+Fixes the NHL era date cap that excluded 2025 and 2026 players, including Macklin Celebrini for San Jose Sharks, and adds teal Sharks colors. Existing local progress keys and player IDs are unchanged.
+
 Athlete Alphabet V4.4.1.1 — All Sports Mode
 
 Adds All Sports play to the four-sport V4.3 application. Choose All Sports to play a combined MLB/NFL/NBA/NHL challenge across all eras. Saved player IDs remain under the original aa-v33-named-athletes localStorage key; existing progress is retained. Verified multi-sport people are linked so that naming them in one sport counts for their other sport and All Sports. Other names are intentionally not automatically merged because people in different leagues can share identical names.
