@@ -67,3 +67,6 @@ body.theme-mlb .eyebrow, body.theme-nfl .eyebrow {
   opacity:1 !important;
   text-shadow:0 1px 2px rgba(0,0,0,.45);
 }
+
+/* V4.5.1: compact branding, scrollable accessible settings, first-run guide */
+.brandHeader{display:flex;align-items:center;gap:11px}.brandIcon{width:43px;height:43px;border-radius:12px;flex-shrink:0}.brandHeader h1{margin:0}.modalCard{max-height:calc(100dvh - 36px);overflow-y:auto;overscroll-behavior:contain}.welcomeCard{text-align:center}.welcomeCard p{text-align:left;line-height:1.5}.welcomeCard>.muted{text-align:center}.welcomeLogo{width:88px;height:88px;border-radius:19px;margin:0 auto 8px;display:block}.welcomeAction{width:100%;margin:7px 0;padding:13px}.settingsSection #aa45{padding:0;margin:0;color:inherit}.settingsSection #aa45 details{margin:9px 0}.settingsSection #aa45 .aa45grid{grid-template-columns:repeat(2,minmax(0,1fr))}#advancedTools>summary{font-weight:800;cursor:pointer;padding:12px;background:#1a2d35;border-radius:12px}#advancedTools[open]>summary{margin-bottom:10px}#installSteps{line-height:1.6}#installSteps ol{padding-left:22px}
