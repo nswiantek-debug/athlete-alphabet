@@ -76,6 +76,6 @@ body.theme-mlb .eyebrow, body.theme-nfl .eyebrow {
 
 .celebration-test-buttons{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.celebration-test-buttons button{background:#243943;border:1px solid #8198a2;color:#fff;border-radius:9px;padding:9px 12px;font-weight:650}
 
-/* V4.5.5 hidden dialogs cannot capture touches */
-#settingsModal[hidden],#welcomeModal[hidden],#installModal[hidden],.modal[hidden],.aa-celebration[hidden]{display:none!important;visibility:hidden!important;pointer-events:none!important}
+/* Keep hidden overlays from intercepting touches. */
+.modal[hidden],.aa-celebration[hidden]{display:none!important;pointer-events:none!important}
 .aa-celebration,.aa-celebration *{pointer-events:none!important}

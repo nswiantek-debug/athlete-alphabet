@@ -1,1 +1,1 @@
-Athlete Alphabet V4.5.5 startup recovery. Hidden dialogs cannot intercept taps. Orphaned celebration elements are cleared on page restoration. Optional diagnostic safe mode: append ?safe=1 to the site URL. No save keys modified. Root cause not yet reproduced. Upload all files to GitHub Pages root.
+Athlete Alphabet V4.5.6: fixes hardcoded V4.5.3 athlete footer, updates asset cache keys, adds defensive overlay cleanup. Does not change save keys or delete progress. This does not establish the cause of slow rendering. Upload all files to repository root.
