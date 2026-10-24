@@ -1,10 +1,6 @@
-Athlete Alphabet V4.6.0 — Automatic achievements
+Athlete Alphabet V4.7.0 — Roster Recall pilot and region color themes.
+Upload all extracted files to the root of your GitHub Pages repository.
+Roster Recall pilot: verified 38 players who appeared for the 2005 Chicago White Sox during the regular season; positions are one per player, with SP/RP split.
+Existing Athlete Alphabet progress and achievements remain untouched.
 
-- Five automatic milestones: 10, 25, 50, 100, 250 distinct initial combinations with at least one correctly named athlete.
-- Global counts across all four leagues and all scopes/eras; no spoilers or additional game mode.
-- Existing saved athlete answers count immediately.
-- New milestones display a short, non-blocking notification.
-- Progress and all existing saved data keys are unchanged.
-- Retains V4.5.7 performance optimizations.
-
-Upload all files into the existing GitHub Pages repository root.
+Current Game summary appears immediately above the initials and updates with Sport, Scope, Era, and Mode.
