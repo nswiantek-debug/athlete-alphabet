@@ -1,1 +1,2 @@
-Athlete Alphabet V4.5.6: fixes hardcoded V4.5.3 athlete footer, updates asset cache keys, adds defensive overlay cleanup. Does not change save keys or delete progress. This does not establish the cause of slow rendering. Upload all files to repository root.
+Athlete Alphabet V4.5.7 — performance optimization
+Caches eligible athletes and initials indexes per league/scope/region/era and caches unchanged progress statistics. Avoids rebuilding regional franchise windows for each athlete. Removes Relaxed Mode subtitle. Keeps all existing localStorage keys and gameplay rules. This build passed JavaScript syntax checks; iPhone performance still needs real-device testing.
